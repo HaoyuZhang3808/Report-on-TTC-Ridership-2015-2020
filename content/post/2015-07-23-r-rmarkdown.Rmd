@@ -7,7 +7,7 @@ categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
 
-Author: Haoyu Zhang
+# Author: Haoyu Zhang
 
 # Abstract
 
@@ -18,9 +18,11 @@ While the annual TTC ridership has been maintaining stability in the past decade
 Ever since the Toronto Transit Commission was established in 1921, it bring convenience to the city-wise transportation of Toronto citizens and travelers. Nowadays, TTC has become a crucial commuting mean and has fused into people’s lifestyles. Monitoring the ridership of TTC on a regular basis is not only essential to service management but also a good parameter for population analysis if proper statistical analysis is employed. However, the TTC ridership has met its rock bottom in 2020 with respect to the past decade due to the global pandemic. This blog will analyze the TTC ridership in the past 5 years and the monthly ridership of 2019 and 2020.
 
 # Data Analysis
+
 Data on TTC monthly ridership is obtained from open.toronto.com. The monthly ridership from 2015 and 2020 2nd quarter is analyzed in two separate graphs since the data of 2020 differentiate significantly from the others due to the pandemic. Such huge fluctuation can be seen as an outlier in long-term statistical analysis. We used @citereadr and @citebaser during the graph making process, and we used @citeblogdown to upload.
 
 # Analysis on TTC Ridership From 2015 to 2019
+
 In the past 5 years, TTC monthly ridership has been fluctuating with certain patterns. An average of 44.2 million people rides with TTC in the past 5 years. The data has an IQR range of 9.36 and a range of 16.0. Referring to the 'Scatterplot of TTC Monthly Ridership From 2015 to 2019’, we can find an interesting fact that the ridership of each March, June, and September, that is, the end of the first three quarters is higher than the rest of the months. This trend applies to all 5 years and causes the major fluctuation of the data. Notably, November of 2018 is an exception with an unexpected high ridership of 52.2 million. The peak(53.2 million) ridership arrives in September of 2019 and the bottom being August of 2017.
 
 # Analysis on TTC Ridership From 2019 to 2020 June
