@@ -6,14 +6,14 @@ bibliography: "references.bib"
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
+# Author: Haoyu Zhang
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
-```
 # Abstract
+
 While the annual TTC ridership has been maintaining stability in the past decade, the ridership of 2020 in the first two quarters shows an abnormal decline as a result of the social limitation during the pandemic. A scatterplot is employed to present the monthly ridership in the past 5 years with linear regression analysis to explore the trend. The huge decline in 2020 is presented in the bar chart to compare with the previous year.
 
-#Introduction
+# Introduction
+
 Ever since the Toronto Transit Commission was established in 1921, it bring convenience to the city-wise transportation of Toronto citizens and travelers. Nowadays, TTC has become a crucial commuting mean and has fused into people’s lifestyles. Monitoring the ridership of TTC on a regular basis is not only essential to service management but also a good parameter for population analysis if proper statistical analysis is employed. However, the TTC ridership has met its rock bottom in 2020 with respect to the past decade due to the global pandemic. This blog will analyze the TTC ridership in the past 5 years and the monthly ridership of 2019 and 2020.
 
 # Data Analysis
@@ -58,6 +58,7 @@ barplot(two_year$ridership, main="TTC Ridership From Jan 2019 to Jun 2020
         ", 
    xlab="Time(Month)", ylab = "Ridership(Million People)", names.arg = month)
 ```
+
 A bar chart is used to show the drastic decline in 2020 second quarter. From the graph, we can see high ridership in March, June, and September of 2019 that has been discussed in the previous session. Starting March 2020, the ridership drops below the normal range of data and experiences a dramatic fall in April. 
 
 # Reference
