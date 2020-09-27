@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
+
+
+<title>Report on TTC Ridership from 2015 to 2020 - Haoyu&#39;s website</title>
+<meta property="og:title" content="Report on TTC Ridership from 2015 to 2020 - Haoyu&#39;s website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">Report on TTC Ridership from 2015 to 2020</h1>
+
+    
+    <span class="article-date">2015-07-23</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
+<p>While the annual TTC ridership has been maintaining stability in the past decade, the ridership of 2020 in the first two quarters shows an abnormal decline as a result of the social limitation during the pandemic. A scatterplot is employed to present the monthly ridership in the past 5 years with linear regression analysis to explore the trend. The huge decline in 2020 is presented in the bar chart to compare with the previous year.</p>
+<p>#Introduction
+Ever since the Toronto Transit Commission was established in 1921, it bring convenience to the city-wise transportation of Toronto citizens and travelers. Nowadays, TTC has become a crucial commuting mean and has fused into people’s lifestyles. Monitoring the ridership of TTC on a regular basis is not only essential to service management but also a good parameter for population analysis if proper statistical analysis is employed. However, the TTC ridership has met its rock bottom in 2020 with respect to the past decade due to the global pandemic. This blog will analyze the TTC ridership in the past 5 years and the monthly ridership of 2019 and 2020.</p>
+</div>
+<div id="data-analysis" class="section level1">
+<h1>Data Analysis</h1>
+<p>Data on TTC monthly ridership is obtained from open.toronto.com. The monthly ridership from 2015 and 2020 2nd quarter is analyzed in two separate graphs since the data of 2020 differentiate significantly from the others due to the pandemic. Such huge fluctuation can be seen as an outlier in long-term statistical analysis. We used <span class="citation">Wickham, Hester, and Francois (2018)</span> and <span class="citation">R Core Team (2020)</span> during the graph making process, and we used <span class="citation">(<span class="citeproc-not-found" data-reference-id="citeblogdown"><strong>???</strong></span>)</span> to upload.</p>
+</div>
+<div id="analysis-on-ttc-ridership-from-2015-to-2019" class="section level1">
+<h1>Analysis on TTC Ridership From 2015 to 2019</h1>
+<p>In the past 5 years, TTC monthly ridership has been fluctuating with certain patterns. An average of 44.2 million people rides with TTC in the past 5 years. The data has an IQR range of 9.36 and a range of 16.0. Referring to the ‘Scatterplot of TTC Monthly Ridership From 2015 to 2019’, we can find an interesting fact that the ridership of each March, June, and September, that is, the end of the first three quarters is higher than the rest of the months. This trend applies to all 5 years and causes the major fluctuation of the data. Notably, November of 2018 is an exception with an unexpected high ridership of 52.2 million. The peak(53.2 million) ridership arrives in September of 2019 and the bottom being August of 2017.</p>
+</div>
+<div id="analysis-on-ttc-ridership-from-2019-to-2020-june" class="section level1">
+<h1>Analysis on TTC Ridership From 2019 to 2020 June</h1>
+<p>Starting at the end of 2019, a global pandemic has affected the lifestyle of the global citizen to an extreme extent. Along with the provincial policies that shut down the school campuses, entertainment, and commercial space, the TTC ridership has dropped to a nadir(6.529 million) in April 2020. It was not until June 2020 that the ridership started to recover and rase to 11.237 million which is approximately a quarter of the average ridership(44.2 million) in the past 5 years. Due to the instability of the pandemic and the limitation of data collection, no regression studies can be made by now to predict the trend.</p>
+</div>
+<div id="graphs-analysis" class="section level1">
+<h1>Graphs Analysis</h1>
+<pre><code>## 
+## Call:
+## lm(formula = ridership_5y ~ month_5y)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -6.701 -3.786 -1.880  5.252  9.593 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 44.84691    1.31355  34.142   &lt;2e-16 ***
+## month_5y    -0.02111    0.03745  -0.564    0.575    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 5.024 on 58 degrees of freedom
+## Multiple R-squared:  0.005451,   Adjusted R-squared:  -0.0117 
+## F-statistic: 0.3179 on 1 and 58 DF,  p-value: 0.5751</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+A scatter plot is chosen in this section as an attempt to capture the trend of TTC ridership in the past 5 years. The variables fluctuate severely within a certain range - every 3 month, the ridership rises and quickly descends in the coming month. A simple linear regression model is made to analysis the tendency, and here we obtained a fitted line: <span class="math display">\[\hat{y}= 44.84691 - 0.02111  x \]</span>
+The beta1 slope parameter estimate indicates that in each month, the ridership drops by 0.02111 million. Beta0 y-intercept parameter estimate has no practical meaning hence is discarded. However, the p-value test shows that this regression model shows no statistical significance. Thus, we cannot conclude a linear correlation between time and ridership. One major drawback of this analysis is that we cannot determine the starting point of data analysis because the TTC company was established long ago. In the period of services, major constructions such as the service of a new bus line can result in huge alternation in the data.</p>
+</div>
+<div id="analysis-on-ttc-ridership-from-2019-to-2020-june-1" class="section level1">
+<h1>Analysis on TTC Ridership From 2019 to 2020 June</h1>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+A bar chart is used to show the drastic decline in 2020 second quarter. From the graph, we can see high ridership in March, June, and September of 2019 that has been discussed in the previous session. Starting March 2020, the ridership drops below the normal range of data and experiences a dramatic fall in April.</p>
+</div>
+<div id="reference" class="section level1 unnumbered">
+<h1>Reference</h1>
+<div id="refs" class="references">
+<div id="ref-citebaser">
+<p>R Core Team. 2020. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.</p>
+</div>
+<div id="ref-citereadr">
+<p>Wickham, Hadley, Jim Hester, and Romain Francois. 2018. <em>Readr: Read Rectangular Text Data</em>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

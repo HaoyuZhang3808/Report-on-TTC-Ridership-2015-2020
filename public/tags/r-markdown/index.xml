@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Markdown on Haoyu&#39;s website</title>
+    <link>/tags/r-markdown/</link>
+    <description>Recent content in R Markdown on Haoyu&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate><atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report on TTC Ridership from 2015 to 2020</title>
+      <link>/2015/07/23/report-on-ttc-ridership-from-2015-to-2020/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/report-on-ttc-ridership-from-2015-to-2020/</guid>
+      <description>Abstract While the annual TTC ridership has been maintaining stability in the past decade, the ridership of 2020 in the first two quarters shows an abnormal decline as a result of the social limitation during the pandemic. A scatterplot is employed to present the monthly ridership in the past 5 years with linear regression analysis to explore the trend. The huge decline in 2020 is presented in the bar chart to compare with the previous year.</description>
+    </item>
+    
+  </channel>
+</rss>
